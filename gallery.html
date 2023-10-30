@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
+        <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Golden hue to match the Porsche logo theme */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+main h2 {
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main div {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+main p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+main h3 {
+    margin-top: 10px;
+    color: #d2232a;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+main h3:hover {
+    color: #005599;
+}
+
+footer {
+                text-align: center;
+                padding: 20px 0;
+                background-color: #f9f9f9;
+                border-top: 2px solid #e0e0e0;
+                font-size: 14px;
+}
+            
+        </style>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEQD4H6DTC"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-DEQD4H6DTC');
+     </script>
     <title>PurelyPorsche - Gallery</title>   
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the PurelyPorsche Gallery featuring iconic Porsche cars, from the legendary 911 to Porsche's exotic models. Dive into the world of Porsche excellence.">
+    <meta name="keywords" content="Porsche, Porsche Gallery, Porsche 911, Porsche Cayman, Porsche SUV, vintage Porsche, Porsche EV">
     </head>
     <body>
         <header>
             <!--#logo use width="" and height "" with px -->
-            <img src="images/Screen Shot 2023-09-25 at 3.17.58 PM.png" alt="Logo of Website"> 
+            <img src="images/Screen Shot 2023-09-25 at 3.17.58 PM.jpg" alt="Logo of Website"> 
            
             <!-- #navigation next to logo -->
             <nav>
@@ -20,7 +123,7 @@
             </nav>
          </header>
     <main>
-      <div>  <h2>• Gallery</h2> </div>
+        <h2>• Gallery</h2> 
         <div> <img src="images/911 generations.jpeg"> 
         <p>The Legendary 911
             <h3>See More</h3>

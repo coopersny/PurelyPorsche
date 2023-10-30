@@ -1,13 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>/
+            body, h2, h3, p, ul, li, form {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            
+            body {
+                background-color: #f3f3f3;
+            }
+            
+            header {
+                background-color: #f9f9f9;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 2px solid #e0e0e0;
+            }
+            
+            header img {
+                width: 150px;
+                height: auto;
+            }
+            
+            nav ul {
+            display: flex;
+             gap: 30px;
+            }
+
+            nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+            }
+
+            nav a:hover {
+            color: #FFD700; /* Golden hue to match the Porsche logo theme */
+            }
+
+            
+            main {
+    display: flex;
+    gap: 20px; /* space between form and images */
+}
+
+form {
+    flex: 1; /* take up half of the available width */
+    /* ... rest of the form styles ... */
+}
+
+/* Style for the container holding the images */
+div.images-container {
+    flex: 1; /* take up the other half of the available width */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* spacing between the images */
+}
+
+div.images-container img {
+    width: 100%; /* images take full width of the container */
+    border-radius: 5px;
+}
+
+
+
+            
+            form {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            div img {
+                width: 95%;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+            
+            form label {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            
+            form input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #e0e0e0;
+                border-radius: 5px;
+            }
+            
+            form h3 {
+                cursor: pointer;
+                background-color: #d2232a;
+                color: #fff;
+                text-align: center;
+                padding: 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            
+            form h3:hover {
+                background-color: #b01c23;
+            }
+            
+section img {
+    width: 95%; /* images take up 95% of the width of the container */
+    margin-bottom: 20px; /* space between the images */
+    border-radius: 5px;
+}
+
+            footer {
+                text-align: center;
+                padding: 20px 0;
+                background-color: #f9f9f9;
+                border-top: 2px solid #e0e0e0;
+                font-size: 14px;
+            }
+            
+            </style>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEQD4H6DTC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DEQD4H6DTC');
+        </script>
     <title>PurelyPorsche - Sign Up</title>   
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up for a PurelyPorsche account to access exclusive content and updates related to Porsche cars. Create your account and become part of our Porsche enthusiast community.">
+    <meta name="keywords" content="Porsche, sign up, account creation, Porsche enthusiasts">
     </head>
     <body>
         <header>
             <!--#logo use width="" and height "" with px -->
-            <img src="images/Screen Shot 2023-09-25 at 3.17.58 PM.png" alt="Logo of Website"> 
+            <img src="images/Screen Shot 2023-09-25 at 3.17.58 PM.jpg" alt="Logo of Website"> 
             
             <!-- #navigation next to logo -->
             <nav>
@@ -22,10 +156,9 @@
          <main>
             <div>
                 <h2>Create Your Account</h2>
-            </div>
-            <div>
                 <p>If you already have an account Log in Here.</p>
             </div>
+            
             <form>
                <p> <label for="email">Email Address:</label>
                 <input type="text" id="email" name="email" >
@@ -45,9 +178,10 @@
             </form>
 
 
-            <div>
-                <img src="images/porsche 918.jpeg"> <img src="images/porsche 963.jpeg">
-            </div>
+            <section>
+                <img src="images/porsche 918.jpeg"> 
+                <img src="images/porsche 963.jpeg">
+            </section>
          </main>
 
         </body>
