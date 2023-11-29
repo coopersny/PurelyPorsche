@@ -1,145 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style>
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #F8F8F8;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #FFF;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        main {
+            display: flex; /* Added for Flexbox layout */
+            justify-content: space-around; /* Distributes space around items */
+            padding: 50px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-image img {
+    display: block; /* Ensures each image is on a new line */
+    width: 100%; /* Adjusts the width to fit the container */
+    height: auto; /* Maintains the aspect ratio of the images */
+    margin-bottom: 10px; /* Adds space between the images */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: #F8F8F8;
-    color: #333;
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #FFF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
+   
 
-header img {
-    height: 60px;
-}
-nav ul {
-    display: flex;
-    gap: 30px;
-}
+        .columns-container {
+         display: flex;
+         justify-content: space-around;
+         /* Add other styles for the columns container if needed */
+        }
 
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: color 0.3s;
+        .column {
+            flex: 1; /* Each column takes equal width */
+            padding: 0 20px; /* Spacing inside each column */
+        }
+
+        main h2 {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        main p {
+            color: #000000;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .contact-section {
+    text-align: center; /* Center aligns the content */
+    padding: 20px;
 }
 
-nav a:hover {
-    color: #FFD700; /* Golden hue to match the Porsche logo theme */
-}
-main {
-    padding: 50px;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.contact-header {
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: center; /* Centers the flex items horizontally */
+    align-items: center; /* Aligns the flex items vertically */
+    gap: 10px; /* Adds a gap between the image and the header */
 }
 
-main div {
-    display: flex;
-    align-items: center; /* This will vertically align the contents in the center */
-    margin-bottom: 30px;
+.contact-text {
+    margin-top: 20px; /* Adds space above the paragraph */
 }
 
 
-main div img {
-    width: 200px;  /* Adjust this value as desired */
-    height: 200px; /* Adjust this value as desired */
-    margin-right: 20px;
-}
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f9f9f9;
+            border-top: 2px solid #e0e0e0;
+            font-size: 14px;
+        }
 
+    </style>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEQD4H6DTC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-
-main h2 {
-    font-size: 24px;
-    margin: 20px 0;
-    color: #333;
-}
-
-main p {
-    color: #666;
-    line-height: 1.5;
-    font-size: 16px;
-}
-footer {
-                text-align: center;
-                padding: 20px 0;
-                background-color: #f9f9f9;
-                border-top: 2px solid #e0e0e0;
-                font-size: 14px;
-}
-            
-        </style>
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEQD4H6DTC"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-DEQD4H6DTC');
-        </script>
-    <title>PurelyPorsche - About Us</title>   
+        gtag('config', 'G-DEQD4H6DTC');
+    </script>
+    <title>PurelyPorsche - About Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the rich history and passion behind Porsche at PurelyPorsche. Explore our curated galleries of iconic Porsche models and join us in celebrating automotive excellence.">
     <meta name="keywords" content="Porsche, iconic cars, automotive excellence, Porsche history">
-    </head>
-    <body>
-        <header>
-            <!--#logo use width="" and height "" with px -->
-            <img src="images/Screen Shot 2023-09-25 at 3.17.58 PM.jpg" alt="Logo of Website"> 
-           
-            <!-- #navigation next to logo -->
-            <nav>
-                    <ul>
-                        <li> <a href="index.html"> Home</a></li>
-                        <li> <a href="aboutus.html"> About Us</a></li>
-                        <li> <a href="gallery.html"> Gallery</a></li>
-                        <li> <a href="signup.html"> Sign Up</a></li>
-                    </ul>
-            </nav>
-         </header>
-         <main>
-            <div> <img src="images/about us picture.jpeg" alt="about us pciture" width="100" height="100"> <h2>• About Us</h2></div>
-            <div>
-                <p>
-                    Our mission is simple: to celebrate the remarkable journey of Porsche, one of the most iconic names in the automotive world. From its inception in the workshops of Ferdinand Porsche to its contemporary masterpieces, we are dedicated to showcasing every twist and turn of this legendary marque's evolution.
-                    Through our meticulously curated galleries, we invite enthusiasts, historians, and newcomers alike to explore the rich tapestry of models that have borne the Porsche badge. From the groundbreaking 356 to the game-changing 911, and every masterpiece in between, our collection aims to capture the spirit, innovation, and design excellence that is quintessentially Porsche.</p>
-                    
-                    
-                  <p> Purely Porsche is more than just a website; it's a tribute to the passion, engineering prowess, and vision that have driven Porsche throughout its history. Whether you're a long-time aficionado or simply curious about the brand, we hope to ignite the same passion in you that has fueled Porsche for nearly a century.
-                    Join us in this immersive journey, as we rev through time, honoring the legacy of a brand that has never stopped pursuing perfection.
-                </p>
-            </div>
-            <div> <img src="images/contact us.png" alt="contact us" width="50" height="50"> <h2>• Contact Us</h2> </div>
-            <div>
-                <p>
-                    For inquiries, car submissions, or any questions about our gallery, please don't hesitate to reach out to us!
-                    purelyporsche@gmail.com
-                </p>
-            </div>
-         </main>
-         <footer>
-            <p> Privacy Policy  Ⓒ PurelyPorsche All Rights Reserved. </p>   
-        </footer>
-    </body>
+</head>
+<body>
+    <header>
+        <img src="images/Screen Shot 2023-09-25 at 3.17.58 PM.jpg" alt="Logo of Website">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-image">
+            <img src="images/aboveaboutimage.jpeg" alt="about us picture" > 
+            <img src="images/aboutussuv.jpeg" alt="about us Suv" > 
+        </div>
+        <div class="column">
+            <h2>• About Us</h2>
+            <p>
+                Our mission is simple: to celebrate the remarkable journey of Porsche, one of the most iconic names in the automotive world. From its inception in the workshops of Ferdinand Porsche to its contemporary masterpieces, we are dedicated to showcasing every twist and turn of this legendary marque's evolution.
+                Through our meticulously curated galleries, we invite enthusiasts, historians, and newcomers alike to explore the rich tapestry of models that have borne the Porsche badge. From the groundbreaking 356 to the game-changing 911, and every masterpiece in between, our collection aims to capture the spirit, innovation, and design excellence that is quintessentially Porsche.
+            </p>
+        </div>
+        <div class="column">
+            <h2>• Our Passion</h2>
+            <p>
+                Purely Porsche is more than just a website; it's a tribute to the passion, engineering prowess, and vision that have driven Porsche throughout its history. Whether you're a long-time aficionado or simply curious about the brand, we hope to ignite the same passion in you that has fueled Porsche for nearly a century.
+                Join us in this immersive journey, as we rev through time, honoring the legacy of a brand that has never stopped pursuing perfection.
+            </p>
+        </div>
+    </div>
+    
+    </main>
+    <div class="contact-section">
+        <div class="contact-header">
+            <img src="images/contact us.png" alt="contact us" width="50" height="50">
+            <h2>• Contact Us</h2>
+        </div>
+        <p class="contact-text">
+            For inquiries, car submissions, or any questions about our gallery, please don't hesitate to reach out to us!
+            purelyporsche@gmail.com
+        </p>
+    </div>
+    
+    <footer>
+        <p> Privacy Policy Ⓒ PurelyPorsche All Rights Reserved. </p>
+    </footer>
+</body>
 </html>
+
+
